@@ -1,13 +1,12 @@
-const { config, oauth } = require('./utils/auth')
+const { config, oauth } = require("./utils/auth")
 
 /* Do initial auth redirect */
 exports.handler = async (event, context) => {
-
   if (!event.queryStringParameters) {
     return {
       statusCode: 401,
       body: JSON.stringify({
-        error: 'No token found',
+        error: "No token found"
       })
     }
   }
@@ -19,9 +18,9 @@ exports.handler = async (event, context) => {
   const authorizationURI = oauth.authorizationCode.authorizeURL({
     redirect_uri: config.redirect_uri,
     /* Specify how your app needs to access the user’s account. */
-    scope: '',
+    scope: "",
     /* State helps mitigate CSRF attacks & Restore the previous state of your app */
-    state: `url=${redirectUrl}&csrf=${csrfToken}`,
+    state: `url=${redirectUrl}&csrf=${csrfToken}`
   })
 
   /* Redirect user to authorizationURI */
@@ -29,8 +28,8 @@ exports.handler = async (event, context) => {
     statusCode: 302,
     headers: {
       Location: authorizationURI,
-      'Cache-Control': 'no-cache' // Disable caching of this response
+      "Cache-Control": "no-cache" // Disable caching of this response
     },
-    body: '' // return body for local dev
+    body: "" // return body for local dev
   }
 }
