@@ -30,13 +30,13 @@ Using Netlify OAuth you can create custom experiences using the [Netlify Open AP
 
 1. **Create and Deploy a new Netlify site**
 
-    You can use an [this repo](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/oauth-example)
+    You can use [this repo](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/oauth-example)
 
 2. **[Create OAuth application](https://app.netlify.com/account/applications)**
 
     Create your OAuth application in the Netlify admin UI.
 
-    Add in your callback URL. This can be changed later.
+    Add in your callback URL. (can be changed later)
 
     ![image](https://user-images.githubusercontent.com/532272/53382433-3066da00-3929-11e9-978a-74d802c212db.png)
 
