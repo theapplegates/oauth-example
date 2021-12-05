@@ -1,7 +1,7 @@
 import React from "react"
 import NetlifyAPI from "netlify"
 import timeAgo from "time-ago"
-import { csrfToken, parseHash, removeHash } from "./utils/auth"
+import { csrfToken, parseHash } from "./utils/auth"
 import { sortByDate, sortByPublishDate, sortByName, sortByFunctions, sortByRepo, matchText } from "./utils/sort"
 import ForkMe from "./components/ForkMe"
 import loginButton from "./assets/netlify-login-button.svg"
