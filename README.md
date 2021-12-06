@@ -1,9 +1,5 @@
-<h1> Netlify OAuth
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/oauth-example">
-  <img align="right" src="https://camo.githubusercontent.com/be2eb66bb727e25655f1dcff88c2fdca82a77513/68747470733a2f2f7777772e6e65746c6966792e636f6d2f696d672f6465706c6f792f627574746f6e2e737667" class="deploy-button" alt="deploy to netlify">
-</a>
-<a href='https://app.netlify.com/sites/oauth-example/deploys'><img align="right" src='https://api.netlify.com/api/v1/badges/ff09f383-7ad2-4b9e-a14d-cc4a868f16c4/deploy-status'/></a>
-</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/adc7ac5f-3ee6-4317-968c-fb9b15061ce1/deploy-status)](https://app.netlify.com/sites/stupefied-swartz-0098af/deploys)
+
 
 Example of how to use Netlify OAuth Applications
 
